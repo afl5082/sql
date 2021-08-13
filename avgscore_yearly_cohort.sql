@@ -3,7 +3,6 @@ with yearly_cohorts as (
 SELECT extract(year FROM u.creation_date) as signup_year,
        ROUND(SUM(score) / count(post_id),4) as average
 
-       --row numbers for individual posts by creation date by user
 FROM (SELECT 
         user_id,
         score,
@@ -21,8 +20,8 @@ ORDER BY 1 ASC)
 
 SELECT  signup_year,
         average,
-        (( average / LAG(average)
+        ROUND((( average / LAG(average)
                 OVER (ORDER BY signup_year ASC)) - 1 ) 
-                        * 100 as pct_change_previous_year
+                        * 100,2) as pct_change_previous_year
     FROM yearly_cohorts
     ORDER BY 1 ASC; 
