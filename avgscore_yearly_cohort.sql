@@ -3,6 +3,7 @@ with yearly_cohorts as (
 SELECT extract(year FROM u.creation_date) as signup_year,
        ROUND(SUM(score) / count(post_id),4) as average
 
+       --row numbers for individual posts by creation date by user
 FROM (SELECT 
         user_id,
         score,
