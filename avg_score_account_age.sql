@@ -3,4 +3,5 @@ SELECT date_diff( current_date(), EXTRACT(DATE FROM u.creation_date), YEAR) as a
 FROM `bigquery-public-data.stackoverflow.users` u
 JOIN `bigquery-public-data.stackoverflow.comments` c
 ON u.id = c.user_id
-GROUP BY 1;
+GROUP BY 1
+ORDER BY 1 DESC;
