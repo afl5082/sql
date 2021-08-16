@@ -7,7 +7,7 @@ JOIN
     SELECT user_id
     FROM`bigquery-public-data.stackoverflow.comments`
     GROUP by 1
-    HAVING count(post_id) < 10
+    HAVING count(id) < 10
 ) as b
 ON a.user_id = b.user_id
 WHERE extract(year from creation_date) = 2020
