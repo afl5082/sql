@@ -1,7 +1,7 @@
 
 with yearly_cohorts as (
 SELECT extract(year FROM u.creation_date) as signup_year,
-       ROUND(SUM(score) / count(post_id),4) as average
+       ROUND(SUM(score) / count(c.id),4) as average
 
 FROM (SELECT 
         user_id,
