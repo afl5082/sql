@@ -6,7 +6,7 @@ SELECT extract(year FROM u.creation_date) as signup_year,
 FROM (SELECT 
         user_id,
         score,
-        post_id,
+        id,
         ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY creation_date ASC) as rn 
         FROM `bigquery-public-data.stackoverflow.comments` 
         ORDER BY 1,3 ASC
