@@ -4,8 +4,8 @@ Estimated time required: 30-60 minutes
 
 Questions:
 
-What are the ten highest-score StackOverflow comments of 2020 by users who have made fewer than 10 comments ever?
-Assume we measure a user’s “initial comment quality” as the average comment score of their first 10 comments. How has initial comment quality varied for the yearly cohorts of user signups?
-What’s another interesting factoid you can pull from this dataset?
+- What are the ten highest-score StackOverflow comments of 2020 by users who have made fewer than 10 comments ever?
+- Assume we measure a user’s “initial comment quality” as the average comment score of their first 10 comments. How has initial comment quality varied for the yearly cohorts of user signups?
+- What’s another interesting factoid you can pull from this dataset?
 
 In your writeup, please include any SQL you used.
