@@ -4,10 +4,9 @@ This exercise will be based on the [Stack Overflow Dataset](https://console.clou
 
 Estimated time required: 30-60 minutes
 
-Questions:
+#### Questions:
 
 1. What are the ten highest-score StackOverflow comments of 2020 by users who have made fewer than 10 comments ever?
 2. Assume we measure a user’s “initial comment quality” as the average comment score of their first 10 comments. How has initial comment quality varied for the yearly cohorts of user signups?
 3. What’s another interesting factoid you can pull from this dataset?
 
-In your writeup, please include any SQL you used.
