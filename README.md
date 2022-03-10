@@ -1,3 +1,5 @@
+## SQL Excercise 
+
 This exercise will be based on the [Stack Overflow Dataset](https://console.cloud.google.com/marketplace/product/stack-exchange/stack-overflow?filter=solution-type:dataset&id=46a148ff-896d-444c-b08d-360169911f59) publicly available via Google BigQuery. You can use any Google account and will have free access to 1TB of querying (per month) which should be enough for 50+ queries. Note that tables may need to be referenced with backticks and the full path, e.g. `bigquery-public-data.stackoverflow.comments`.
 
 Estimated time required: 30-60 minutes
